@@ -83,3 +83,9 @@ html {
   object-fit: cover;
   object-position: center;
 }
+
+@media (max-width: 540px) {
+  .logo {
+    font-size: 2rem;
+  }
+}
