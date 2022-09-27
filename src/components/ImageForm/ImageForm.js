@@ -29,7 +29,7 @@ function ImageForm({ addImage }) {
           required
           name="source"
           type="url"
-          placeholder="Enter image url here"
+          placeholder="Enter image url here..."
           value={source}
           onChange={(e) => setSource(e.target.value)}
         />
@@ -40,15 +40,15 @@ function ImageForm({ addImage }) {
           required
           name="caption"
           type="text"
-          placeholder="Enter image description here"
+          placeholder="Enter image description here..."
           value={caption}
           onChange={(e) => setCaption(e.target.value)}
         />
       </Form.Group>
-      <Button variant="secondary" type="button" onClick={clearText}>
+      <Button className="clear" type="button" onClick={clearText}>
         Clear
       </Button>
-      <Button variant="primary" type="submit">
+      <Button className="submit" type="submit">
         <BsCardImage /> Add Image
       </Button>
     </Form>
